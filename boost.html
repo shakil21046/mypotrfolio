@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Shakil Khan - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: black;
+            color: white;
+        }
+        section {
+            padding: 80px 0;
+            min-height: 100vh;
+        }
+        .navbar {
+            padding: 25px 10%;
+        }
+        .nav-link {
+            font-size: 20px;
+            font-weight: 500;
+            color: white !important;
+            margin-left: 35px;
+            transition: color 0.5s;
+            text-decoration: none !important;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: blue !important;
+        }
+        .btn-custom {
+            padding: 2px 5px;
+            background: red;
+            border-radius: 10px;
+            box-shadow: 0 0 2px blue;
+            transition: all 0.5s;
+            color: white;
+            border: none;
+            text-decoration: none !important;
+        }
+        .btn-custom:hover {
+            background: transparent;
+            color: blue;
+            box-shadow: none;
+        }
+        .sci-icon {
+            display: inline-flex;
+            padding: 8px;
+            border: 2px solid blue;
+            border-radius: 50%;
+            font-size: 20px;
+            color: blue;
+            margin: 0 8px;
+            transition: all 0.5s;
+            text-decoration: none !important;
+        }
+        .sci-icon:hover {
+            background: blue;
+            color: black;
+            box-shadow: 0 0 10px black;
+        }
+        .img-box {
+            width: 32vw;
+            height: 32vw;
+            max-width: 400px;
+            max-height: 400px;
+            background: red;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s;
+        }
+        .skill-card:hover {
+            transform: scale(1.05);
+        }
+        .skill-img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin: 0 auto 15px;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .project-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-1" href="#">Md Shakil Khan</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievement">Achievement</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Md Shakil Khan</h1>
+                    <h4 class="mb-3">I am a student.</h4>
+                    <p class="lead mb-4">
+                        I am doing BSc. Engg. in the department of Information and Communication Technology.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn-custom me-4">Download CV</a>
+                        <div class="sci-icons">
+                            <a href="#" class="sci-icon"><i class='bx bxl-github'></i></a>
+                            <a href="#" class="sci-icon"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="#" class="sci-icon"><i class='bx bxl-whatsapp'></i></a>
+                            <a href="#" class="sci-icon"><i class='bx bxl-gmail'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="img-box">
+                        <img src="C:\Users\mdsha\pic\me4.jpg" alt="Profile Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <i class='bx bx-user fs-1 text-primary mb-3'></i>
+                        <h3>Name</h3>
+                        <p>Md Shakil Khan</p>
+                    </div>
+                    <div class="info-card">
+                        <i class='bx bx-home fs-1 text-primary mb-3'></i>
+                        <h3>Home District</h3>
+                        <p>Manikgonj</p>
+                    </div>
+                    <div class="info-card">
+                        <i class='bx bx-globe fs-1 text-primary mb-3'></i>
+                        <h3>Hobby</h3>
+                        <p>Visiting new places</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <i class='bx bx-book fs-1 text-primary mb-3'></i>
+                        <h3>Education</h3>
+                        <p>BSc in ICT</p>
+                    </div>
+                    <div class="info-card">
+                        <i class='bx bx-code-alt fs-1 text-primary mb-3'></i>
+                        <h3>Skills</h3>
+                        <p>Programming, Problem Solving</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="info-card text-center">
+                        <i class='bx bxl-facebook fs-1 text-primary mb-3'></i>
+                        <h3>Facebook</h3>
+                        <p><a href="https://facebook.com/yourprofile" class="text-white">https://www.facebook.com/md.shakil.khan.47038</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="info-card text-center">
+                        <i class='bx bxl-whatsapp fs-1 text-primary mb-3'></i>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/yournumber" class="text-white">+880 1521740302</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="info-card text-center">
+                        <i class='bx bxl-gmail fs-1 text-primary mb-3'></i>
+                        <h3>Gmail</h3>
+                        <p><a href="mailto:your.email@gmail.com" class="text-white">mdshakil.it46@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Education</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="info-card text-center">
+                        <i class='bx bxs-school fs-1 text-primary mb-3'></i>
+                        <h3>School</h3>
+                        <p>Patgram A. B. Govt. High School</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="info-card text-center">
+                        <i class='bx bxs-graduation fs-1 text-primary mb-3'></i>
+                        <h3>College</h3>
+                        <p>Govt. Debendra College</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="info-card text-center">
+                        <i class='bx bxs-university fs-1 text-primary mb-3'></i>
+                        <h3>University</h3>
+                        <p>Mawlana Bhashani Science and Technology University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Section -->
+    <section id="achievement" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center mb-5">Achievements</h2>
+            
+            <h3 class="mb-4">Skills</h3>
+            <div class="row mb-5">
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="skill-img">
+                        <h4>Java</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="skill-img">
+                        <h4>Python</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C" class="skill-img">
+                        <h4>C</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="C++" class="skill-img">
+                        <h4>C++</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="mb-4">Projects</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="project-card">
+                        <h4>Java Project: Money Management App</h4>
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*8ygFKYb0Yo6Hc-vnScGA9A.png" alt="Money Management App" class="project-img">
+                        <p>Android development project for personal finance tracking and management.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="project-card">
+                        <h4>C/C++ Project: Snake Game</h4>
+                        <img src="C:\Users\mdsha\pic\snake.png" alt="Snake Game" class="project-img">
+                        <p>Classic snake game developed using C++ with console graphics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Update active nav link on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    const id = section.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
